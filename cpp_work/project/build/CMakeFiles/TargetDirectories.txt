@@ -1,0 +1,6 @@
+/vagrant/perfect_cpp/cpp_work/project/build/CMakeFiles/rebuild_cache.dir
+/vagrant/perfect_cpp/cpp_work/project/build/CMakeFiles/edit_cache.dir
+/vagrant/perfect_cpp/cpp_work/project/build/CMakeFiles/perfect_cpp.dir
+/vagrant/perfect_cpp/cpp_work/project/build/infra/CMakeFiles/edit_cache.dir
+/vagrant/perfect_cpp/cpp_work/project/build/infra/CMakeFiles/rebuild_cache.dir
+/vagrant/perfect_cpp/cpp_work/project/build/infra/CMakeFiles/infra.dir

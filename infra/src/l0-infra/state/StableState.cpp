@@ -1,0 +1,42 @@
+/*
+ * StableState.cc
+ *
+ *  Created on: Oct 21, 2012
+ *      Author: arthur
+ */
+
+#include "l0-infra/state/StableState.h"
+
+USI_NS_BEGIN
+
+////////////////////////////////////////////////////////////////////////////
+bool StableState::isStable() const
+{
+   return true;
+}
+
+////////////////////////////////////////////////////////////////////////////
+Status StableState::enter(StateMachine&)
+{
+   return USI_CONTINUE;
+}
+
+////////////////////////////////////////////////////////////////////////////
+Status StableState::handleEvent(StateMachine&, const Event&)
+{
+   return USI_UNKNOWN_EVENT;
+}
+
+////////////////////////////////////////////////////////////////////////////
+Status StableState::leave(StateMachine&, const Status)
+{
+   return USI_CONTINUE;
+}
+
+////////////////////////////////////////////////////////////////////////////
+void StableState::kill(StateMachine&, const Status)
+{
+}
+
+USI_NS_END
+

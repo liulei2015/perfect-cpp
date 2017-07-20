@@ -1,0 +1,33 @@
+/*
+ * Asn1Status.h
+ *
+ * Created on: Sep 26, 2013
+ *     author: Darwin Yuan
+ *
+ * Copyright 2013 ThoughtWorks, All Rights Reserved.
+ *
+ */ 
+
+#ifndef ASN1STATUS_H_
+#define ASN1STATUS_H_
+
+#include "l0-infra/base/Status.h"
+
+#define DEF_ASN1_ERROR(code, offset) \
+DEF_SIMPLE_FAILED_STATUS(code,  (offset + 0x40000000))
+
+DEF_ASN1_ERROR(ASN1_E_EOF,         1);
+DEF_ASN1_ERROR(ASN1_E_VALUE_RANGE, 2);
+DEF_ASN1_ERROR(ASN1_E_SEQ_RANGE,   3);
+DEF_ASN1_ERROR(ASN1_E_SYNTAX_T,    4);
+DEF_ASN1_ERROR(ASN1_E_NOT_IMPL,    5);
+DEF_ASN1_ERROR(ASN1_E_MISSING_IE,  6);
+DEF_ASN1_ERROR(ASN1_E_WRONG_ORDER, 7);
+DEF_ASN1_ERROR(ASN1_E_OCCURENCE,   8);
+DEF_ASN1_ERROR(ASN1_E_UNKNOWN_IE,  9);
+DEF_ASN1_ERROR(ASN1_E_INT_CHOICE,  10);
+DEF_ASN1_ERROR(ASN1_E_OVERFLOW,    11);
+DEF_ASN1_ERROR(ASN1_E_CODEC_BUF,   12);
+
+#endif /* ASN1STATUS_H_ */
+

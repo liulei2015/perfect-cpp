@@ -1,0 +1,15 @@
+#ifndef INCL_UT_H9077469E_62ED_4A4F_9477_DBA56C58B063
+#define INCL_UT_H9077469E_62ED_4A4F_9477_DBA56C58B063
+
+#include "utest.h"
+
+UTESTING_NS_BEGIN
+
+struct Adapter
+{
+
+};
+
+UTESTING_NS_END
+
+#endif

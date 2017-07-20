@@ -1,0 +1,19 @@
+#ifndef INCL_SERVICE_HAB3A4D2F_FE3F_4793_9CD2_F33CE8B21D63
+#define INCL_SERVICE_HAB3A4D2F_FE3F_4793_9CD2_F33CE8B21D63
+
+#include "l0-infra/base/Service.h"
+
+SERVICE_NS_BEGIN
+
+
+enum Celluar_State
+{
+    DIE = 1,
+    LIVE = 2,
+    INVALID_CELLUAR_STATE
+};
+
+
+SERVICE_NS_END
+
+#endif

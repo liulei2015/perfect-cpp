@@ -1,0 +1,25 @@
+#include "l0-infra/log/log.h"
+#include "l0-infra/wrapper/ng_pub_platform.h"
+#include "l0-infra/base/stdio_ng.h"
+#include "pub_commdef.h"
+#include "pub_oss.h"
+#include "pub_tracedef.h"
+#include <stdarg.h>
+//#include "l0-infra/log/TraceMeUdt.h"
+
+//USING_USI_NS
+
+extern "C" const char* getBaseName(const char* absPath)
+{
+    if (absPath == 0) return "";
+
+    const char* p = absPath + strlen(absPath);
+    while ((p != absPath) && (*(p - 1) != SEPERATOR))
+    {
+        p--;
+    }
+
+    return p;
+}
+
+

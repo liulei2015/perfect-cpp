@@ -1,0 +1,17 @@
+#ifndef INCL_UT_HC5A96799_4C2B_47A9_A3E2_EE1857B0714F
+#define INCL_UT_HC5A96799_4C2B_47A9_A3E2_EE1857B0714F
+
+#include "utest.h"
+
+UTESTING_NS_BEGIN
+
+
+struct Strategy
+{
+
+};
+
+
+UTESTING_NS_END
+
+#endif

@@ -1,0 +1,13 @@
+#ifndef INCL_SERVICE_H018AC41C_AC62_4BA5_AC65_450A5DEFA14C
+#define INCL_SERVICE_H018AC41C_AC62_4BA5_AC65_450A5DEFA14C
+
+#include "l0-infra/base/Service.h"
+#include "l0-infra/base/BaseTypes.h"
+
+SERVICE_NS_BEGIN
+
+using HOW_LONG_NOT_USE_MEASUREMENT = U32;
+
+SERVICE_NS_END
+
+#endif
