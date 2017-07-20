@@ -116,7 +116,7 @@ namespace
 TEST_F(TestIO, file_read_ok)
 {
     SaveDataBuffer saveData;
-    char* dataAddr = "/home/szdev/liulei/dev/cpp/perfect_cpp/cpp_work/ft/utest/src/io/data.txt";
+    char* dataAddr = "/vagrant/github/perfect-cpp/cpp_work/ft/utest/src/io/data.txt";
     setSaveDataBuffer(saveData, dataAddr);
 
     Array2D_U32 dataContainer;
@@ -129,7 +129,7 @@ TEST_F(TestIO, file_read_ok)
 TEST_F(TestIO, file_read_data2_ok)
 {
     SaveDataBuffer saveData;
-    char* dataAddr = "/home/szdev/liulei/dev/cpp/perfect_cpp/cpp_work/ft/utest/src/io/data2.txt";
+    char* dataAddr = "/vagrant/github/perfect-cpp/cpp_work/ft/utest/src/io/data2.txt";
     setSaveDataBuffer(saveData, dataAddr);
 
     Array2D_5_U32 dataContainer;
