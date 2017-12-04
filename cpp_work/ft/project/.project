@@ -36,6 +36,11 @@
 			<locationURI>PARENT-3-PROJECT_LOC/infra</locationURI>
 		</link>
 		<link>
+			<name>mockcpp</name>
+			<type>2</type>
+			<locationURI>PARENT-5-PROJECT_LOC/mockcpp</locationURI>
+		</link>
+		<link>
 			<name>test/benchmark</name>
 			<type>2</type>
 			<locationURI>PARENT-1-PROJECT_LOC/benchmark</locationURI>
