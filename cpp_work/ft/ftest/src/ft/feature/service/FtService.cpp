@@ -7,7 +7,7 @@ FTESTING_NS_BEGIN
 extern "C" void P_S_Service_Entry(WORD16 state, WORD16 eventId,
         void *msg,  void *data);
 
-//
+
 TEST(FtService, service_startup_ok)
 {
     WORD16 state = 0;

@@ -113,31 +113,31 @@ namespace
     }
 }
 
-TEST_F(TestIO, file_read_ok)
-{
-    SaveDataBuffer saveData;
-    char* dataAddr = "/vagrant/github/perfect-cpp/cpp_work/ft/utest/src/io/data.txt";
-    setSaveDataBuffer(saveData, dataAddr);
-
-    Array2D_U32 dataContainer;
-
-    assignDataContainer<Array2D_U32>(saveData, dataContainer, 3);
-
-    ASSERT_TRUE(dataContainer == expectedData);
-}
-
-TEST_F(TestIO, file_read_data2_ok)
-{
-    SaveDataBuffer saveData;
-    char* dataAddr = "/vagrant/github/perfect-cpp/cpp_work/ft/utest/src/io/data2.txt";
-    setSaveDataBuffer(saveData, dataAddr);
-
-    Array2D_5_U32 dataContainer;
-
-    assignDataContainer<Array2D_5_U32>(saveData, dataContainer, 5);
-
-    ASSERT_TRUE(dataContainer == expectedData2);
-}
+//TEST_F(TestIO, file_read_ok)
+//{
+//    SaveDataBuffer saveData;
+//    char* dataAddr = "/vagrant/github/perfect-cpp/cpp_work/ft/utest/src/io/data.txt";
+//    setSaveDataBuffer(saveData, dataAddr);
+//
+//    Array2D_U32 dataContainer;
+//
+//    assignDataContainer<Array2D_U32>(saveData, dataContainer, 3);
+//
+//    ASSERT_TRUE(dataContainer == expectedData);
+//}
+//
+//TEST_F(TestIO, file_read_data2_ok)
+//{
+//    SaveDataBuffer saveData;
+//    char* dataAddr = "/vagrant/github/perfect-cpp/cpp_work/ft/utest/src/io/data2.txt";
+//    setSaveDataBuffer(saveData, dataAddr);
+//
+//    Array2D_5_U32 dataContainer;
+//
+//    assignDataContainer<Array2D_5_U32>(saveData, dataContainer, 5);
+//
+//    ASSERT_TRUE(dataContainer == expectedData2);
+//}
 
 UTESTING_NS_END
 

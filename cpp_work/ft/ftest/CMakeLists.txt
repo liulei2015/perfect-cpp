@@ -1,4 +1,4 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.0)
 
 PROJECT(cpp-work-ft)
 
@@ -17,7 +17,7 @@ include_directories(
 
 IF(UNIX)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g3 -w -rdynamic -std=c++11 -O2 -fprofile-arcs -ftest-coverage")
-  set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -fprofile-arcs -ftest-coverage -g3 ")
+  set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -fprofile-arcs -ftest-coverage -g3")
   set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wno-invalid-offsetof -O2")
 ENDIF(UNIX)
 
@@ -56,7 +56,7 @@ SET(all_files ${ftest_files} ${utest_files} ${benchmark_test_files})
 
 add_executable(ftest ${all_files})
 
-target_link_libraries(ftest cpp_work infra mockcpp gtest libcelero.so pthread)
+target_link_libraries(ftest cpp_work infra gtest libcelero.so pthread)
 
 
 
