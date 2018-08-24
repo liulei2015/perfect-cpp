@@ -1,0 +1,9 @@
+#ifndef INCL_MCC_HFEA7CC88_0961_4FB6_9FA2_70FF09F824FD
+#define INCL_MCC_HFEA7CC88_0961_4FB6_9FA2_70FF09F824FD
+
+struct PowerOnMsg
+{
+    int data;
+};
+
+#endif

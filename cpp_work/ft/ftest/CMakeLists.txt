@@ -11,6 +11,7 @@ include_directories(
 "../utest/include/"
 "../benchmark/inc/"
 "${cpp_work_code}/inc/"
+"${cpp_work_code}/mcc/include/"
 "${tools_dir}/include/"
 "${infra_dir}/include/"
 )
@@ -36,6 +37,7 @@ include/*.h
 include/*.hpp
 src/*.cpp
 src/*.cc
+src/*.c
 )
 
 FILE(GLOB_RECURSE utest_files
@@ -43,6 +45,7 @@ FILE(GLOB_RECURSE utest_files
 ../utest/include/*.hpp
 ../utest/src/*.cpp
 ../utest/src/*.cc
+../utest/src/*.c
 )
 
 FILE(GLOB_RECURSE benchmark_test_files

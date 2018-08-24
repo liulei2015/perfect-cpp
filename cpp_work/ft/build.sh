@@ -37,7 +37,7 @@ echo "**************************************************************************
 echo "start run tests..."
 
 #TestCelluarMachine.celluar_machine_help_get_celluar_pos_right_up_round
-./ftest --gtest_filter=*.* --gtest_color=yes $@ [-g]
+./ftest --gtest_filter=ConcurrencyTest.* --gtest_color=yes $@ [-g]
 
 if [ $? -ne 0 ]; then
     echo "build ${working_path} fail"

@@ -8,6 +8,7 @@ file(GLOB_RECURSE files
 ${cpp_work_code}/src/*.cpp
 ${cpp_work_code}/src/*.cc
 ${cpp_work_code}/inc/*.hpp
+${cpp_work_code}/mcc/src/*.c
 )
 
 add_library(cpp_work ${files})
